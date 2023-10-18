@@ -1,0 +1,95 @@
+#PS1 seems to take damage if there are more acceptors than donators.
+#PGR5 is probably required to faciliate the reaction of ready PC with B6F.
+#The source of PGR5 is probably spent FNR+FD
+#The target of PGR5 is probably B6F.
+#PGR5 is probably an enzyme that docks to reduced FNR+FD and allows it to interact with B6F
+
+#PS1: More Acceptors than Donators: Damage.
+
+#y(NA) - Number of free acceptors (Number of free FD)
+#y(ND) - Number of free donators (Number of free PC)
+
+
+#12 states, taken from "A tale of two CETs"
+This information will help in tuning the model and testing it for consitancy under different conditions.
+Modifictions of the model that represent the different mutations should be tested in the future
+
+#PTOX2 increases PQ Rearming rate while reducing dPH buildup
+
+#Y(NA) is higher under low light but decreased under high light.
+#Both are the same effect. PTOX2 hinders C6Bf activity
+#under dark conditions this means, that NDH-1 reactions can continue to function, thus increasing the free NA relative to the WT 
+#under light conditions the same effects applies. In this case PGR5 is hindered to release FD from FNR and rearm it. This decreases the relative free NA under light conditions.
+
+#Y(ND) is increased under light
+#More free donors means less activity of B6F. This is caused by a depletion of the PQ pool
+#ready PC cannot react with B6F without PQ
+
+#More H+ are pumped into the lumen
+#This probably means under light conditions. As PTOX2 reduced the PQ faster than in the wild type, PS2 should be able to work independentent of the rest of the cycle and pump more H+ into the lumen
+
+#Wild Type
+#WT- Dark -Without
+#Y(NA) = Normal
+#Y(ND) = Normal
+
+#WT- Dark -With
+#Y(NA) = Increased
+#Y(ND) = Increased
+
+#WT- Light -Without
+#Y(NA) = Normal
+#Y(ND) = Normal
+
+#WT- Light -With
+#Y(NA) = Decreased
+#Y(ND) = Normal
+
+#The PGR5 Mutation features a lack of PGR5 ironically.
+#PGR5 does not accumulate in the PGR5 Mutant. This results in lower NPQ, lower Y(ND) and higher Y(NA) and PS1 Damage.
+#The PGR5 Muutant hast overall increased Y(NA) and overall decreased Y(ND) under all conditions.
+
+
+#The PGR5 Mutant should have decreased dPH buildup.
+#This is result of the clogging up of CET1, which also slows down CET2, as the PQH Pool should be reduced slower.
+#LET should be dominant in this setup.
+#I think PH raises slower in this setup, resulting in lower NPQ and thus higher damage (Where does the damage come from?)
+#Number of Free FD: 
+#Number of Free PC:
+
+
+#PGR5 Type - increased PS1 damage
+#PGR5- Dark -Without
+#Y(NA) = higher
+#Y(ND) = lower
+#increased damage
+
+#PGR5- Dark -With
+#Y(NA) = higher
+#Y(ND) = No change
+
+#PGR5- Light -Without
+#Y(NA) = higher
+#Y(ND) = lower
+#increased damage
+
+#PGR5- Light -With
+#Y(NA) = similar to pure PGR5. Much higher than WT
+#Y(ND) = slightly enhanced. Much lower than WT
+
+#CRR2, NDH-1 does not accumulate
+#CRR2- Dark -Without
+#Y(NA) = reduced
+#Y(ND) = Y(ND) and NPQ slow down under low loight
+
+#CRR2- Dark -With
+#Y(NA) = reduced
+#Y(ND) = reduced?
+
+#CRR2- Light -Without
+#Y(NA) = reduced
+#Y(ND) = reduced
+
+#CRR2- Light -With
+#Y(NA) = restored
+#Y(ND) = restored
